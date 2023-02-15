@@ -1,0 +1,19 @@
+edge cases: when input is wrong. Then we modify the code by adding if's
+
+like if(num < 0){
+    num = 0
+}else if(num > arr.length - 1){ // length is 7 and index are 0 to 6
+
+    num = arr.length - 1;
+}
+
+
+Linear Search: Check the array in sequence as they are consecutive.
+
+NOTE: We use while loop when we have to use 2 indexes in condition. While loop continues till the condition met.
+we need the 2 indexes in the binary search.
+
+Binary Search: Binary Search is used to reduce the working. Previously we were using the linear search which checks each element in the array.
+But Binary search says we can find by finding the mid of array and then check either target(to find) is less than the arr.length - 1. If less than
+then mean our target value would be next from mid. Again do the same. 1- Find mid from previous mid + 1 till arr.length - 1
+It would do that until the target found.
